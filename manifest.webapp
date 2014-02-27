@@ -1,0 +1,17 @@
+{
+  "version": "0.3",
+  "name": "Subnet Tool",
+  "description": "Useful and Simple network calculator",
+  "launch_path": "/SomeNetTools/index.html",
+  "icons": {
+	"48": "/SomeNetTools/img/icons/Net_48.png",
+    "60": "/SomeNetTools/img/icons/MozIcon_60.png",
+    "128": "/SomeNetTools/img/icons/MozIcon_128.png"
+  },
+  "developer": {
+    "name": "Nicolas Delebecque",
+    "url": "http://www.github.com/nicodel"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "en"
+}
