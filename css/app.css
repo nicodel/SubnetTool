@@ -1,0 +1,91 @@
+
+/* Tip: Use "@import" to add styles instead of adding <link>'s in your
+   HTML, and volo will inline it when building for production */
+
+/* Styles for the installation button */
+/*@import "install-button.css";*/
+/* Styles from FirefoxOS building blocks */
+@import "button.css";
+@import "headers.css";
+@import "input_areas.css";
+@import "lists.css";
+/* Styles from FirefoxOS */
+@import "fonts.css";
+
+/* Your styles here */
+
+body {
+  /*padding: 10px;*/
+/*  max-width: 320px;*/
+  margin:auto;
+  font-family: 'MozTTLight', Verdana, sans-serif;
+}
+
+header menu img {
+  width:48px;
+  padding-right:10px;
+}
+
+section[role="region"] > header:first-child {
+  background: url(../img/ui/header.png) repeat-x 0 0;
+  height: 3.2rem;
+}
+section[role="region"] > header:first-child h1 {
+  font: 1.3rem/3.2rem "MozTT", Sans-serif;
+  height: auto;
+}
+section[role="region"] > header:first-child .icon {
+  height: 3.2rem;
+}
+section[role="region"] > header:first-child .icon.icon-send {
+  background-image: url(../img/icons/send.png);
+}
+section[role="region"] > header:first-child menu[type="toolbar"] a {
+    text-align:right;
+    padding-right:1rem;
+}
+#top, #result {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button,
+a[role="button"] {
+    background: #fafafa url(../img/ui/default.png) repeat-x left bottom;
+    margin-top: 15px;
+}
+
+.info, input[type="number"], input[type="text"] {
+    font:1.3rem/4rem "MozTT", Sans-serif;
+    margin-top: 10px;
+    background: #fff url(../img/ui/shadow.png) repeat-x;
+}  
+
+#result {
+/*    width: 41.1em;*/
+/*    margin: 2em 0;*/
+    /*padding: 0;*/
+    font-size:1.3rem;
+}
+#result dt {
+    margin: 0;
+/*    padding: 0;*/
+    font-weight: bold;
+}
+#result dd {
+    margin: 0 0 1em 0;
+/*    padding: 0;*/
+    border-bottom: 1px solid #e6e6e6;
+    color: #5b5b5b;
+}
+
+@media (min-width: 540px) {
+  .info, input[type="text"] {
+    font:2.1rem/4rem "MozTT", Sans-serif;
+  }
+  section[role="region"] > header:first-child h1 {
+    font: 2.1rem/3.2rem "MozTT", Sans-serif;
+  }
+  #result {font-size:2.1rem;}
+  button {font-size:2rem;}
+}
