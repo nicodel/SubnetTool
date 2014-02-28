@@ -2,11 +2,11 @@
   "version": "0.1",
   "name": "Subnet Tool",
   "description": "Useful and Simple network calculator",
-  "launch_path": "index.html",
+  "launch_path": "/index.html",
   "icons": {
-	"48": "img/icons/Net_48.png",
-    "60": "img/icons/MozIcon_60.png",
-    "128": "img/icons/MozIcon_128.png"
+	"48": "/img/icons/Net_48.png",
+    "60": "/img/icons/MozIcon_60.png",
+    "128": "/img/icons/MozIcon_128.png"
   },
   "developer": {
     "name": "Nicolas Delebecque",
