@@ -225,6 +225,7 @@ function calculateHosts(cidr) {
 
 
 function checkEntries(ip, mask) {
+  console.log("ip", ip);
   /* we check if one or both fields are empty,
 * and return the right message.
 */

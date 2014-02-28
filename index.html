@@ -1,43 +1,27 @@
-<!-- index.html Copyright 2010 Meier Link <jeremie.balagna@gmail.com>
-  
-  This program is free software licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 France License.
-  To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/fr/
-  or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
--->
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
   
   <head>
     <title>Subnet Tool</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <!-- device-width: Obtenir la vraie taille de l'écran initial-scale: Zoom au premier chargement maximum-scale: zoom maxi minimum-scale: zoom mini -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/calculation.js"></script>
-    <script type="text/javascript" src="js/action.js"></script>
-    <link href="css/app.css" rel="stylesheet" type="text/css" />
-    <!-- <link rel="stylesheet" type="text/css" href="shared/style/headers.css">-->
+
     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
   </head>
   
   <body>
     <section role="region">
       <header>
         <menu type="toolbar">
-          <img src="img/icons/Net_48.png" alt="SomeNetTools" />
-          <!-- <a href="#"><span class="icon icon-send" id="#install-btn" >install</span></a>-->
-<!--
-          <a href="#">
-            <span class="icon icon-send">install</span>
-          </a>
--->
+          <img src="img/icons/Net_48.png" alt="SubnetTool" />
         </menu>
         <h1>Subnet Tool</h1>
       </header>
     </section>
     <div id="top">
       <div>
-        <input placeholder="Enter IP address ..." type="text" id="ip" value="" required=""/>
+        <input placeholder="Enter IP address ..." type="text" id="ip" value="" required="" onkeyup="SubnetTool.IpKeyUp" />
       </div>
       <div>
         <input placeholder="Enter subnet mask ..." type="text" id="mask" value="" required="" />
@@ -65,8 +49,8 @@
         <dd class="infoValue" id="nb-hosts"></dd>
       </dl>
     </section>
-    <script type="text/javascript" data-main="js/init.js" src="js/lib/require.js">
-</script>
+    <script type="text/javascript" src="js/calculation.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 
 </html>
